@@ -42,7 +42,7 @@ const createCandidate = async function (req, res) {
             return res.status(400).send({ status: false, message: "Please enter the address. ⚠️" })
 
 
-        let candidateCreated = await candidateModel.create(data)  // --> a new intern document is created in the database
+        let candidateCreated = await candidateModel.create(data)  // --> a new candidate document is created in the database
         return res.status(201).send({ status: true, data: candidateCreated })
     } catch (err) {
         return res.status(500).send({ status: false, message: err.message })
