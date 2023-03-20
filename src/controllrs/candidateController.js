@@ -1,5 +1,5 @@
 // const mongoose = require("mongoose")  // --> importing the mongoose
-const candidateModel = require("../models/candidateModel")  // --> importing the internModel module
+const candidateModel = require("../models/candidateModel")  // --> importing the candidateModel module
 const { isValid, nameRegex, emailRegex, mobileRegex } = require("../validations/validator")  // --> importing the validator module
 
 
